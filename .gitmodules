@@ -1,3 +1,9 @@
-[submodule "core"]
+[submodule "modules/core"]
 	path = modules/core
-	url = https://github.com/hosszukalman/pos-module-core
+	url = git@github.com:Platform-OS/pos-module-core.git
+[submodule "modules/theme-manager"]
+	path = modules/theme-manager
+	url = git@github.com:Platform-OS/pos-module-theme-manager.git
+[submodule "modules/components"]
+	path = modules/components
+	url = git@github.com:Platform-OS/pos-module-components.git
