@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% comment %}
+      TODO: make this dynamic!!!
+    {% endcomment %}
+    <link rel="stylesheet" href="{{ 'styles/app.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'modules/components/components.css' | asset_url }}">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        {{content_for_layout}}
+      </main>
+    </div>
+  </body>
+</html>

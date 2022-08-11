@@ -1,1 +1,14 @@
-👋
+
+
+{% capture card_content %}
+  {% theme_render_rc 'components/atoms/headline', tag: 'h2', variant: 'h2', content: 'This is a h2 headline 👋' %}
+  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+{% endcapture %}
+
+<div class="p-6">
+  {% theme_render_rc 'components/atoms/card',
+      tag: 'section',
+      variant: 'highlighted',
+      content: card_content
+  %}
+</div>
