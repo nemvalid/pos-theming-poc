@@ -7,3 +7,6 @@
 [submodule "modules/components"]
 	path = modules/components
 	url = git@github.com:Platform-OS/pos-module-components.git
+[submodule "modules/admin"]
+	path = modules/admin
+	url = git@github.com:Platform-OS/pos-module-admin.git
