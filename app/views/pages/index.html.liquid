@@ -1,14 +1,25 @@
 
 
+
 {% capture card_content %}
-  {% theme_render_rc 'components/atoms/headline', tag: 'h2', variant: 'h2', content: 'This is a h2 headline 👋' %}
+  {% assign headline_params = '{}' | parse_json | hash_merge: tag: 'h2', variant: 'h2', content: 'This is a h2 headline 👋' %}
+  {% theme_render_rc 'components/atoms/headline', params: headline_params %}
   <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
 {% endcapture %}
 
-<div class="p-6">
+<div style="padding: 15px;">
+  {% assign card_params = '{}' | parse_json | hash_merge: variant: 'highlighted', tag: 'section', content: card_content %}
   {% theme_render_rc 'components/atoms/card',
-      tag: 'section',
-      variant: 'highlighted',
-      content: card_content
+      params: card_params
   %}
+</div>
+
+{% parse_json button_attributes %}{
+  "aria-label": "This is the aria label",
+  "onclick": "alert('click!')"
+}{% endparse_json %}
+{% assign button_params = '{}' | parse_json | hash_merge: variant: 'primary', content: 'Click me!', attributes: button_attributes %}
+
+<div style="padding: 15px;">
+  {% theme_render_rc 'components/atoms/button', params: button_params %}
 </div>
