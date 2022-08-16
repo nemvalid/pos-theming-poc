@@ -11,3 +11,7 @@ body {
   background: white;
   min-height: 100vh;
 }
+
+.custom-header {
+  color: tomato;
+}
