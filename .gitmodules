@@ -10,3 +10,6 @@
 [submodule "modules/admin"]
 	path = modules/admin
 	url = git@github.com:Platform-OS/pos-module-admin.git
+[submodule "modules/pos-module-user-forms"]
+	path = modules/pos-module-user-forms
+	url = git@github.com:Platform-OS/pos-module-user-forms.git
