@@ -10,7 +10,7 @@ slug: user/login
     %}
 
     {% liquid
-      assign form_params = '{}' | parse_json | hash_merge: action: '/users/register'
+      assign form_params = '{}' | parse_json | hash_merge: action: '/sessions/create'
       theme_render_rc 'pos-module-user-forms/organisms/login', params: form_params
     %}
   </div>

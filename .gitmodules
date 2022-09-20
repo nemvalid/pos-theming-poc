@@ -13,3 +13,6 @@
 [submodule "modules/pos-module-user-forms"]
 	path = modules/pos-module-user-forms
 	url = git@github.com:Platform-OS/pos-module-user-forms.git
+[submodule "modules/user"]
+	path = modules/user
+	url = https://github.com/Platform-OS/pos-module-user.git
